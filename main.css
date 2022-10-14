@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: #f2f2f2;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0;
+  border-radius: 8px;
+}
+
+section {
+  width: 19.66rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 3.22rem;
+}
+
+section.sedans {
+  background-color: #e38826;
+  border-radius: 8px 0 0 8px;
+}
+
+section.suvs {
+  background-color: #006970;
+}
+
+section.luxury {
+  background-color: #004241;
+  border-radius: 0 8px 8px 0;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  color: #f2f2f2;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6rem;
+  color: #ffffffbf;
+}
+
+button {
+  width: 9.6rem;
+  height: 3.4rem;
+  border: none;
+  border-radius: 99px;
+  font-size: 15px;
+  background-color: #f2f2f2;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+}
+
+section.sedans button {
+  color: #e38826;
+}
+
+section.sedans button:hover {
+  border: 2px solid #f2f2f2;
+  background-color: #e38826;
+  color: #f2f2f2;
+}
+
+section.suvs button {
+  color: #006970;
+}
+
+section.suvs button:hover {
+  border: 2px solid #f2f2f2;
+  background-color: #006970;
+  color: #f2f2f2;
+}
+
+section.luxury button {
+  color: #004241;
+}
+
+section.luxury button:hover {
+  border: 2px solid #f2f2f2;
+  background-color: #004241;
+  color: #f2f2f2;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    height: fit-content;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  section.sedans {
+    border-radius: 8px 8px 0 0;
+  }
+
+  section.luxury {
+    border-radius: 0 0 8px 8px;
+  }
+
+  button {
+    margin: 0;
+  }
+}
